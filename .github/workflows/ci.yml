@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  inventory-proof:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run tests
+        run: python -m unittest discover -s tests
+      - name: Exercise CLI proof path
+        run: |
+          python -m inventory_proof.cli --db /tmp/inventory-proof-ci.sqlite seed
+          python -m inventory_proof.cli --db /tmp/inventory-proof-ci.sqlite plan
+          python -m inventory_proof.cli --db /tmp/inventory-proof-ci.sqlite alerts

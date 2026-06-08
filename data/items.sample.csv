@@ -1,0 +1,5 @@
+sku,name,unit,reorder_point,safety_stock,lead_time_days
+GLOVES-M,Nitrile Gloves Medium,box,20,10,7
+SANITIZER-1L,Hand Sanitizer 1L,bottle,12,6,5
+LABEL-ROLL,Shipping Label Roll,roll,8,4,10
+
