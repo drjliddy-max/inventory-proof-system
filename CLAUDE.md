@@ -1,8 +1,15 @@
 # Inventory Proof System Guardrails
 
-This project inherits the workspace rules in:
+> **This repository is PUBLIC on GitHub** (`drjliddy-max/inventory-proof-system`;
+> code is All Rights Reserved, see `LICENSE`). Everything committed here is
+> world-readable: no secrets, no credentials, no real customer, vendor, or
+> employee data, no client names. Sample data only. Treat every commit message
+> and doc as public copy (see "Public Exposure Rule" below).
 
-- `/Users/johnliddy/Desktop/Projects/CLAUDE.md`
+Inherits `~/.claude/CLAUDE.md` (verification protocol, status taxonomy, success
+vocabulary, AI-methodology triggers, secret rules) and the workspace rules in:
+
+- `/Users/johnliddy/Desktop/Projects/CLAUDE.md` (includes the pre-share secret checks)
 - `/Users/johnliddy/Desktop/Projects/PORTFOLIO_DOCTRINE.md`
 - `/Users/johnliddy/Desktop/Projects/PORTFOLIO_AI_DEVELOPMENT.md`
 - `/Users/johnliddy/Desktop/Projects/MASTER_VISIBILITY_MATRIX.md`
@@ -35,24 +42,22 @@ Operating loop:
 Run:
 
 ```bash
-python -m unittest discover -s tests
-python -m inventory_proof.cli --db /tmp/inventory-proof-check.sqlite seed
-python -m inventory_proof.cli --db /tmp/inventory-proof-check.sqlite plan
-find . -maxdepth 3 \( -name '.env.local' -o -name '.env' -o -name '.vercel' \)
-rg -n "VERCEL_|SENDGRID|SMTP_|API_KEY|TOKEN|SECRET" .
+python3 -m unittest discover -s tests
+python3 -m inventory_proof.cli --db /tmp/inventory-proof-check.sqlite seed
+python3 -m inventory_proof.cli --db /tmp/inventory-proof-check.sqlite plan
 git status --short
 ```
 
+Then run the pre-share secret checks in `/Users/johnliddy/Desktop/Projects/CLAUDE.md`
+("Security & demo/deploy gate"). They matter more here because the repo is public.
+
 ## Claim Language
 
-Use the portfolio trust stack:
+Use the global status taxonomy (`~/.claude/CLAUDE.md`). Locally, `Production
+verified` means live business source data confirms behavior, and `Proven` means a
+reproducible proof artifact shows the business outcome.
 
-- `Implemented`: code/config exists.
-- `Locally verified`: tests or local proof path passed.
-- `Production verified`: live business source data confirms behavior.
-- `Proven`: reproducible proof artifact shows the business outcome.
-
-Never say the system is foolproof, production-ready, or cost-saving until the corresponding proof level exists.
+Local rule: never say the system is foolproof, production-ready, or cost-saving until the corresponding proof level exists.
 
 ## Public Exposure Rule
 
