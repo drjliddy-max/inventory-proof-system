@@ -7,12 +7,8 @@
 > and doc as public copy (see "Public Exposure Rule" below).
 
 Inherits `~/.claude/CLAUDE.md` (verification protocol, status taxonomy, success
-vocabulary, AI-methodology triggers, secret rules) and the workspace rules in:
-
-- `/Users/johnliddy/Desktop/Projects/CLAUDE.md` (includes the pre-share secret checks)
-- `/Users/johnliddy/Desktop/Projects/PORTFOLIO_DOCTRINE.md`
-- `/Users/johnliddy/Desktop/Projects/PORTFOLIO_AI_DEVELOPMENT.md`
-- `/Users/johnliddy/Desktop/Projects/MASTER_VISIBILITY_MATRIX.md`
+vocabulary, AI-methodology triggers, secret rules) and `Projects/CLAUDE.md`
+(includes the pre-share secret checks). This file adds only repo-specific rules.
 
 ## Project Role
 
@@ -48,7 +44,7 @@ python3 -m inventory_proof.cli --db /tmp/inventory-proof-check.sqlite plan
 git status --short
 ```
 
-Then run the pre-share secret checks in `/Users/johnliddy/Desktop/Projects/CLAUDE.md`
+Then run the pre-share secret checks in `Projects/CLAUDE.md`
 ("Security & demo/deploy gate"). They matter more here because the repo is public.
 
 ## Claim Language
@@ -61,10 +57,6 @@ Local rule: never say the system is foolproof, production-ready, or cost-saving 
 
 ## Public Exposure Rule
 
-This repo may be public only as a defensible proof harness. Public-facing language must make the current evidence level clear:
-
-- Local code and tests are implemented.
-- Sample studio ops brief import is locally verified.
-- Live inventory access, source-system parity, and business savings are unknown until a pilot proves them.
+This repo may be public only as a defensible proof harness. Public-facing language must make the current evidence level clear; the current per-capability evidence state lives in `README.md` ("Claim Boundary").
 
 Never use public copy that suggests bulletproof automation, guaranteed employment outcomes, guaranteed raises, guaranteed savings, or complete production readiness.
