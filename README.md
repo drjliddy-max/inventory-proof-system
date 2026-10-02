@@ -99,6 +99,7 @@ Until real system access is connected, this repo can truthfully claim:
 
 - `Implemented`: local ledger, planning engine, CLI, dashboard, tests, CI workflow.
 - `Locally verified`: only after `python -m unittest discover -s tests` and a CLI proof path pass.
+- `Locally verified`: sample studio ops brief import.
 - `Unknown`: live inventory accuracy, source-system parity, vendor integration, employee time saved, and business outcome impact.
 
 Do not claim production reliability, cost savings, complete automation, or "bulletproof" behavior until live source data is connected and proof artifacts exist.
